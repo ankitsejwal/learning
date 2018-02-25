@@ -18,6 +18,9 @@ crossorigin="anonymous">
             $('.shopping').append(list);
             $('input').val('');
         });
+        $(this).on('click', 'h1', function(){
+            $(this).remove();
+        });
     });
 </script>
 
