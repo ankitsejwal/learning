@@ -1,16 +1,11 @@
 {
-  "name": "02_03",
+  "name": "demo",
   "version": "1.0.0",
+  "description": "wow",
   "main": "demo.js",
-  "dependencies": {
-    "lodash": "^4.17.4"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "keywords": [],
-  "description": ""
+  "author": "ankit",
+  "license": "MIT"
 }
