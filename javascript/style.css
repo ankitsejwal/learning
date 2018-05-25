@@ -17,3 +17,7 @@ body{
 .right{
     background: rgb(206, 205, 205);
 }
+
+img{
+    height: 300px;
+}
