@@ -1,9 +1,9 @@
 function changeStyle(){
 
-    var paragraphs =  document.getElementsByTagName('p') ;
+    var paragraphs =  document.getElementsByClassName('para') ;
     
-    paragraphs[0].style.color = "red";
-    paragraphs[1].style.background = "white";
-    paragraphs[2].style.fontStyle = "italic";
-    paragraphs[3].style.fontSize = "32px";
+    for ( var i=0; i < paragraphs.length; i++){
+        paragraphs[i].style.color = "blue";
+    }
+  
 }
