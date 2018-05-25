@@ -1,9 +1,5 @@
-function changeStyle(){
+function func(){
 
-    var paragraphs =  document.getElementsByClassName('para') ;
-    
-    for ( var i=0; i < paragraphs.length; i++){
-        paragraphs[i].style.color = "blue";
-    }
+    document.getElementById('para').innerHTML = 'wow i am changed now ...'
   
 }
