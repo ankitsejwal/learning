@@ -1,0 +1,19 @@
+body{
+    background: rgb(126, 121, 121);
+    margin: 0;
+}
+
+.left, .right{
+    float: left;
+    width: 46%;
+    height: 600px;
+    padding: 20px;
+}
+
+.left{
+    background: rgb(212, 211, 211);
+}
+
+.right{
+    background: rgb(206, 205, 205);
+}
