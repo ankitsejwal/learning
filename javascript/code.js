@@ -1,4 +1,9 @@
 function changeStyle(){
-    document.getElementById("target").style.color = "blue";
-    document.getElementById("target").style.backgroundColor = "white";
+
+    var paragraphs =  document.getElementsByTagName('p') ;
+    
+    paragraphs[0].style.color = "red";
+    paragraphs[1].style.background = "white";
+    paragraphs[2].style.fontStyle = "italic";
+    paragraphs[3].style.fontSize = "32px";
 }
