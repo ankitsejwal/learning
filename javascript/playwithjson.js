@@ -1,19 +1,18 @@
-var setting = require('settings.json');
-console.log(setting);
-var car = {
-    "tyre": "4",
-    "model": "2018",
-    "name": "alto"
+var settings = getData();
+
+function getData(){
+    var json = null;
+
+    $.ajax({
+        async: false,
+        url: "settings.json",
+        dataType: "json",
+        cache: false,
+        success: function(data){
+            json = data;
+        }
+    });
+    return json;
 }
 
-var stringcar = '{\
-    "tyre": "4",\
-    "model": "2018",\
-    "name": "alto"\
-}';
-
-var convertstringcar = JSON.parse(stringcar);
-
-console.log(car);
-console.log(stringcar);
-console.log(convertstringcar);
+console.log(settings.credentials.regular_login.username)

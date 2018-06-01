@@ -1,12 +1,12 @@
 {
     "credentials": {
         "regular_login": {
-            "username": "asej0001@student.monash.edu",
-            "password": "lyndor101"
+            "username": "bong@student.monash.edu",
+            "password": "matther"
         },
         "library_login": {
-            "card_number": "959465",
-            "card_pin": "3728",
+            "card_number": "95946125",
+            "card_pin": "372128",
             "organization_url": "ottawa.ca"
         },
         "course_download_pref": [
