@@ -4,6 +4,7 @@ class Pet():
         self.leg = leg
         self.species = species
 
+    # getter method
     def get_name(self):
         return self.name
     
@@ -13,6 +14,7 @@ class Pet():
     def get_species(self):
         return self.species
 
+    # setter method
     def set_name(self, name):
         self.name = name
     
@@ -25,6 +27,7 @@ class Pet():
     def __str__(self):
         return "%s has %s legs" % (self.name, self.leg)
 
+# inheriting from Pet class
 class Dog(Pet):
     def __init__(self, name, leg, color):
         Pet.__init__(self, name, leg, "Dog")
