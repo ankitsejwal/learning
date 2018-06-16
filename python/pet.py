@@ -38,7 +38,7 @@ class Dog(Pet):
         return self.color
 
     def __str__(self):
-        return "%s has %s legs and is %s colored %s" % (self.name, self.leg, self.color, self.species)
+        return "%s has %s legs and is a %s colored %s" % (self.name, self.leg, self.color, self.species)
 
 # cat class inherited from Pet
 class Cat(Pet):
@@ -51,4 +51,4 @@ class Cat(Pet):
         return self.color
 
     def __str__(self):
-        return "%s has %s legs and is %s colored %s" % (self.name, self.leg, self.color, self.species) 
+        return "%s has %s legs and is a %s colored %s" % (self.name, self.leg, self.color, self.species) 
