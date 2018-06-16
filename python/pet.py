@@ -38,4 +38,17 @@ class Dog(Pet):
         return self.color
 
     def __str__(self):
-        return "%s has %s legs and is %s" % (self.name, self.leg, self.color)
+        return "%s has %s legs and is %s colored %s" % (self.name, self.leg, self.color, self.species)
+
+# cat class inherited from Pet
+class Cat(Pet):
+    def __init__(self, name, leg, color):
+        Pet.__init__(self, name, leg, "Cat")
+        self.color = color
+        self.sound = "meow"
+
+    def get_color(self):
+        return self.color
+
+    def __str__(self):
+        return "%s has %s legs and is %s colored %s" % (self.name, self.leg, self.color, self.species) 
