@@ -1,4 +1,4 @@
-from pet import Pet, Dog, Cat
+from pet import Pet, Dog, Cat, Bird
 
 # creating Dog object
 jack = Dog("jack", 4, "brown")
@@ -15,3 +15,7 @@ print(bob.__str__())
 # using setter method to change value
 bob.set_species("bob cat")
 print(bob.__str__())
+
+# create bird object
+mithu = Bird("mithu", 2, "white")
+print(mithu.__str__())
