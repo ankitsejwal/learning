@@ -1,2 +1,2 @@
 # learning
-learning material
+Learning practices
