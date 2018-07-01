@@ -8,5 +8,10 @@ const person = {
     }
 }
 
+const targetMember = 'name'
+person[targetMember.value] = 'shamitabh'
+
+personName = person.name
+console.log(personName)
 person.walk(6)
 person.speak()
