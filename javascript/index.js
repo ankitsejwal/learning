@@ -1,12 +1,27 @@
-const person = {
-    name: 'John',
-    age: 30,
-    get pName() {
-        return this.name;
+// defining objects using object literal
+
+const circle = {
+    radius: 1.5,
+    location: {
+        x: 1,
+        y: 1
+    },
+    draw : function() {
+        console.log('draw');
     }
 }
 
-person.name = 'Mary';
-person['name'] = 'Krishna';
+circle.draw()
 
-console.log(person.pName());
+// Factory function
+
+function createCircle(radius){
+    return {
+        radius,
+        draw: function(){
+            console.log('draw')
+        }
+    };
+}
+
+const circle = createCircle(1);
