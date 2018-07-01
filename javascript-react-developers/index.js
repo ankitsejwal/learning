@@ -1,8 +1,12 @@
-function helloWorld(){
-    for(var i=0; i<10; i++){
-        console.log(i);
+const person = {
+    name: 'John',
+    walk(km){
+        console.log('He walks '+ km + ' km every day')
+    },
+    speak(){
+        console.log('He can speak too')
     }
-    console.log(i)
 }
 
-helloWorld()
+person.walk(6)
+person.speak()
