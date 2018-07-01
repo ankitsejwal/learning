@@ -35,15 +35,16 @@ class Circle{
     draw(){
         console.log(`This circle's radius is ${this.radius} `);
     }
-    getRadius(){
+    get getRadius(){
         return this.radius;
     }
 
-    setRadius(radius){
+    set setRadius(radius){
         this.radius = radius;
     }
 }
 
 const circle3 = new Circle(2);
-circle3.setRadius(5);
+circle3.setRadius = 6;
+console.log(circle3.getRadius);
 circle3.draw();
