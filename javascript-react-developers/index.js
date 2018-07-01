@@ -1,17 +1,11 @@
 const person = {
-    name: 'John',
-    walk(km){
-        console.log('He walks '+ km + ' km every day')
-    },
-    speak(){
-        console.log('He can speak too')
+    'name' : 'Shiva',
+    walk(){
+        console.log(this)
     }
 }
 
-const targetMember = 'name'
-person[targetMember.value] = 'shamitabh'
+person.walk()
 
-personName = person.name
-console.log(personName)
-person.walk(6)
-person.speak()
+const walk = person.walk.bind(person)
+walk()
