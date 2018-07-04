@@ -9,7 +9,6 @@ const circle = {
 for (let key in circle){
     console.log(key, circle[key]);
 }
-name = 'ankit ji';
 
 for (let word in name) {
     console.log(name[word]);
