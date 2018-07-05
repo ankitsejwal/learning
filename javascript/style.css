@@ -21,3 +21,15 @@ body{
 img{
     height: 300px;
 }
+
+input{
+    height: 40px;
+}
+button{
+    height:40px;
+}
+
+.quantity{
+    width: 50px;
+    color: brown;
+}

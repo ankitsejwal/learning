@@ -4,9 +4,66 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Javscript</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ 
 </head>
-<body>
-    <div id="list"></div>
-    <script src="./animal.js"></script>
+<body class="container">
+
+    <h1>SITE ORDER FORM</h1>
+    <div class="row">
+        <div class="form-group col-4">
+            <label for="" class="form-text text-muted">Ordered by</label>
+            <input type="text" name="order-by" id="">
+        </div>
+        <div class="form-group col-4">
+            <label for="" class="form-text text-muted">Site Name</label>
+            <input type="text" name="site-name" id="">
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-3">Delivery Option:</div>
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active" id="redownload-skip">
+                  <input type="radio" name="options" id="option2" autocomplete="off">Delivered directly to site
+                </label>
+                <label class="btn btn-secondary" id="redownload-force">
+                  <input type="radio" name="options" id="option3" autocomplete="off">Pick up from Preston office
+                </label>
+         </div> <!--Radio butons--> 
+    </div>
+    <br>
+    <br>
+    <h5>TOILET PAPER</h5>
+    <div class="row">
+        <div class="col-2">
+                <label for="" class="form-text">.</label>
+                <label for="" class="form-text">LIVI 2PLY PAPER</label>
+        </div>    
+            <div class="form-group col-1">
+                <label for="" class="form-text text-muted">QUANTITY</label>
+                <!-- order quantity -->
+                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="order-quantity" value="0">
+            </div>
+            <div class="form-group col-2">
+                <label class="form-text" for="">.</label>
+                    <button class="btn btn-primary" onclick="increaseQuantity()">+</button>
+                    <button class="btn btn-primary" onclick="decreaseQuantity()">-</button>
+            </div>
+            <div class="form-group col-6">
+                <label for="" class="form-text text-muted">+</label>
+                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+            </div>
+    </div>
+
+    <!-- Type in<input onkeypress="process()" type="text" id="textbox"/>
+    <button>Process</button>
+    <p id="target"></p> -->
+    <script src="./app.js"></script>
 </body>
 </html>
