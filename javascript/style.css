@@ -1,6 +1,7 @@
 body{
-    background: rgb(126, 121, 121);
+    background: rgb(251, 251, 251);
     margin: 0;
+    padding-top:60px;
 }
 
 .left, .right{
@@ -32,4 +33,28 @@ button{
 .quantity{
     width: 50px;
     color: brown;
+}
+
+.plus-button:hover {
+    border: 1px solid green;
+    background: green;
+    color: white;
+}
+
+.minus-button:hover {
+    border: 1px solid red;
+    background: red;
+    color: white;
+}
+
+.plus-button {
+    border: 1px solid green;
+    background: white;
+    color: green;
+}
+
+.minus-button {
+    border: 1px solid red;
+    background: white;
+    color: red;
 }
