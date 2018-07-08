@@ -1,22 +1,19 @@
 body{
-    background: rgb(251, 251, 251);
+    background: rgb(244, 244, 244);
     margin: 0;
-    padding-top:60px;
 }
 
-.left, .right{
-    float: left;
-    width: 46%;
-    height: 600px;
-    padding: 20px;
+.item-type{
+    margin-bottom: 40px;
+    /* border:1px dotted blue; */
+    padding:30px;
+    border-radius: 15px;
+    background:rgb(235, 233, 233);
 }
-
-.left{
-    background: rgb(212, 211, 211);
-}
-
-.right{
-    background: rgb(206, 205, 205);
+.item-category {
+    color:rgb(114, 84, 250);
+    font-weight: 600;
+    font-style: italic;
 }
 
 .item-name {

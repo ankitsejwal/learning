@@ -11,106 +11,227 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="container">
-
+<body class="container-fluid">
     <div class="row">
-        <div class="form-group col-3">
-            <label for="" class="form-text text-muted">Ordered by</label>
-            <input type="text" name="order-by" id="" class="form-control" placeholder="Enter name">
-        </div>
-        <div class="form-group col-3">
-            <label for="" class="form-text text-muted">Site Name</label>
-            <input type="text" name="site-name" id="" class="form-control" placeholder="e.g. BSL Sunshine">
-        </div>
-    <div class="col-3">
-        <label for="" class="form-text">Delivery option</label>
-        <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                <label class="btn btn-secondary active" id="redownload-skip">
-                  <input type="radio" name="options" id="option2" autocomplete="off">Delivered to site
-                </label>
-                <label class="btn btn-secondary" id="redownload-force">
-                  <input type="radio" name="options" id="option3" autocomplete="off">Pick up from Preston office
-                </label>
-         </div> <!--Radio butons--> 
-    </div>
-    </div>
-    <br>
-    <br>
-    <h5>TOILET PAPER</h5>
-    <br>
-    <!-- item -->
-    <div class="row">
-        <div class="col-3">
-            <label for="" class="form-text item-name">LIVI 2PLY PAPER</label>
-            <label for="" class="form-text item-code">Code: 1001/7008</label>
-        </div>    
-            <div class="form-group col-1">
-                <!-- order quantity -->
-                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="livi-2ply" value="0">
-            </div>
-            <div class="form-group col-1.5">
-                <button class="btn btn-primary plus-button" onclick="increaseQuantity('livi-2ply')"><i class="fas fa-plus"></i></button>
-                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('livi-2ply')"><i class="fas fa-minus"></i></button>
-            </div>
-            <div class="form-group col-4">
-                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
-            </div>
-    </div>
-    <!-- item -->
-    <div class="row">
-            <div class="col-3">
-                <label for="" class="form-text item-name">LIVI INTERLEAVED TISSUE</label>
-                <label for="" class="form-text item-code">Code: 1001</label>
-            </div>    
-                <div class="form-group col-1">
-                    <!-- order quantity -->
-                    <input type="text" name="order-quantity" class="quantity form-control .col-1" id="livi-interleaved" value="0">
+        <div class="col-7">
+            <div class="row">
+                <div class="form-group col-5">
+                        <label for="" class="form-text text-muted">Ordered by</label>
+                        <input type="text" name="order-by" id="" class="form-control" placeholder="Enter name">
+                    </div>
+                    <div class="form-group col-3">
+                        <label for="" class="form-text text-muted">Site Name</label>
+                        <input type="text" name="site-name" id="" class="form-control" placeholder="e.g. BSL Sunshine">
+                    </div>
+                <div class="col-3">
+                    <label for="" class="form-text">Delivery option</label>
+                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                            <label class="btn btn-secondary active" id="redownload-skip">
+                            <input type="radio" name="options" id="option2" autocomplete="off">Delivered to site
+                            </label>
+                            <label class="btn btn-secondary" id="redownload-force">
+                            <input type="radio" name="options" id="option3" autocomplete="off">Pick up from Preston office
+                            </label>
+                    </div> <!--Radio butons--> 
                 </div>
-                <div class="form-group col-1.5">
-                    <button class="btn btn-primary plus-button" onclick="increaseQuantity('livi-interleaved')"><i class="fas fa-plus"></i></button>
-                    <button class="btn btn-primary minus-button" onclick="decreaseQuantity('livi-interleaved')"><i class="fas fa-minus"></i></button>
+            </div>
+            <br>
+            <div class="item-type">
+                <h5 class="item-category">TOILET PAPER</h5><br>
+                <div class="items">
+                    <!-- item -->
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="" class="form-text item-name">LIVI 2PLY PAPER</label>
+                            <label for="" class="form-text item-code">Code: 1001/7008</label>
+                        </div>    
+                            <div class="form-group col-1">
+                                <!-- order quantity -->
+                                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="livi-2ply" value="0">
+                            </div>
+                            <div class="form-group col-1.5">
+                                <button class="btn btn-primary plus-button" onclick="increaseQuantity('livi-2ply')"><i class="fas fa-plus"></i></button>
+                                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('livi-2ply')"><i class="fas fa-minus"></i></button>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                            </div>
+                    </div>
+                    <!-- item -->
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="" class="form-text item-name">LIVI INTERLEAVED TISSUE</label>
+                            <label for="" class="form-text item-code">Code: 1001</label>
+                        </div>    
+                        <div class="form-group col-1">
+                            <!-- order quantity -->
+                            <input type="text" name="order-quantity" class="quantity form-control .col-1" id="livi-interleaved" value="0">
+                        </div>
+                        <div class="form-group col-1.5">
+                            <button class="btn btn-primary plus-button" onclick="increaseQuantity('livi-interleaved')"><i class="fas fa-plus"></i></button>
+                            <button class="btn btn-primary minus-button" onclick="decreaseQuantity('livi-interleaved')"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="" class="form-text item-name">ROLL MODEL TOILET PAPER</label>
+                            <label for="" class="form-text item-code">Code: *</label>
+                        </div>    
+                        <div class="form-group col-1">
+                            <!-- order quantity -->
+                            <input type="text" name="order-quantity" class="quantity form-control .col-1" id="roll-model" value="0">
+                        </div>
+                        <div class="form-group col-1.5">
+                            <button class="btn btn-primary plus-button" onclick="increaseQuantity('roll-model')"><i class="fas fa-plus"></i></button>
+                            <button class="btn btn-primary minus-button" onclick="decreaseQuantity('roll-model')"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="row">
+                        <div class="col-5">
+                            <label for="" class="form-text item-name">CAPRICE JUMBO TOILET PAPER</label>
+                            <label for="" class="form-text item-code">Code: PW300JR</label>
+                        </div>    
+                        <div class="form-group col-1">
+                            <!-- order quantity -->
+                            <input type="text" name="order-quantity" class="quantity form-control .col-1" id="caprice-jumbo" value="0">
+                        </div>
+                        <div class="form-group col-1.5">
+                            <button class="btn btn-primary plus-button" onclick="increaseQuantity('caprice-jumbo')"><i class="fas fa-plus"></i></button>
+                            <button class="btn btn-primary minus-button" onclick="decreaseQuantity('caprice-jumbo')"><i class="fas fa-minus"></i></button>
+                        </div>
+                        <div class="form-group col-4">
+                            <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group col-4">
-                    <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
-                </div>
+            </div>
+            <div class="item-type">
+                    <h5 class="item-category">HAND TOWELS</h5><br>
+                    <div class="items">
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="" class="form-text item-name">CAPRICE GREEN SUPER SLIM INTERLEAVE</label>
+                                <label for="" class="form-text item-code">Code: 1516GR</label>
+                            </div>    
+                                <div class="form-group col-1">
+                                    <!-- order quantity -->
+                                    <input type="text" name="order-quantity" class="quantity form-control .col-1" id="caprice-green" value="0">
+                                </div>
+                                <div class="form-group col-1.5">
+                                    <button class="btn btn-primary plus-button" onclick="increaseQuantity('caprice-green')"><i class="fas fa-plus"></i></button>
+                                    <button class="btn btn-primary minus-button" onclick="decreaseQuantity('caprice-green')"><i class="fas fa-minus"></i></button>
+                                </div>
+                                <div class="form-group col-4">
+                                    <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                                </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="" class="form-text item-name">CAPRICE ROLL HAND TOWEL</label>
+                                <label for="" class="form-text item-code">Code: 80 MTR ROLL-MODEL</label>
+                            </div>    
+                            <div class="form-group col-1">
+                                <!-- order quantity -->
+                                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="caprice-roll" value="0">
+                            </div>
+                            <div class="form-group col-1.5">
+                                <button class="btn btn-primary plus-button" onclick="increaseQuantity('caprice-roll')"><i class="fas fa-plus"></i></button>
+                                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('caprice-roll')"><i class="fas fa-minus"></i></button>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-5 item">
+                                <label for="" class="form-text item-name">LIVI PREMIUM COMPACT TOWEL</label>
+                                <label for="" class="form-text item-code">Code: 1416</label>
+                            </div>    
+                            <div class="form-group col-1">
+                                <!-- order quantity -->
+                                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="livi-premium-compact" value="0">
+                            </div>
+                            <div class="form-group col-1.5">
+                                <button class="btn btn-primary plus-button" onclick="increaseQuantity('livi-premium-compact')"><i class="fas fa-plus"></i></button>
+                                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('livi-premium-compact')"><i class="fas fa-minus"></i></button>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="" class="form-text item-name">LIVI INTERLEAVED HANDTOWEL</label>
+                                <label for="" class="form-text item-code">Code: 1402</label>
+                            </div>    
+                            <div class="form-group col-1">
+                                <!-- order quantity -->
+                                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="livi-interleaved-handtowel" value="0">
+                            </div>
+                            <div class="form-group col-1.5">
+                                <button class="btn btn-primary plus-button" onclick="increaseQuantity('livi-interleaved-handtowel')"><i class="fas fa-plus"></i></button>
+                                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('livi-interleaved-handtowel')"><i class="fas fa-minus"></i></button>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="" class="form-text item-name">PREMIUM ULTRASIM TOWEL</label>
+                                <label for="" class="form-text item-code">Code: PWUSTBA</label>
+                            </div>    
+                            <div class="form-group col-1">
+                                <!-- order quantity -->
+                                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="premium-ultrasim-towel" value="0">
+                            </div>
+                            <div class="form-group col-1.5">
+                                <button class="btn btn-primary plus-button" onclick="increaseQuantity('premium-ultrasim-towel')"><i class="fas fa-plus"></i></button>
+                                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('premium-ultrasim-towel')"><i class="fas fa-minus"></i></button>
+                            </div>
+                            <div class="form-group col-4 comments">
+                                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                            </div>
+                        </div>
+                        <!-- item -->
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="" class="form-text item-name">CAPRICE DELUX SLIMFOLD TOWELS</label>
+                                <label for="" class="form-text item-code">Code: 4000CU</label>
+                            </div>    
+                            <div class="form-group col-1">
+                                <!-- order quantity -->
+                                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="caprice-delux-slimfold" value="0">
+                            </div>
+                            <div class="form-group col-1.5">
+                                <button class="btn btn-primary plus-button" onclick="increaseQuantity('caprice-delux-slimfold')"><i class="fas fa-plus"></i></button>
+                                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('caprice-delux-slimfold')"><i class="fas fa-minus"></i></button>
+                            </div>
+                            <div class="form-group col-4">
+                                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+                            </div>
+                        </div>
+                    </div>
+            </div>
         </div>
-        <!-- item -->
-        <div class="row">
-            <div class="col-3">
-                <label for="" class="form-text item-name">ROLL MODEL TOILET PAPER</label>
-                <label for="" class="form-text item-code">Code: *</label>
-            </div>    
-            <div class="form-group col-1">
-                <!-- order quantity -->
-                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="roll-model" value="0">
-            </div>
-            <div class="form-group col-1.5">
-                <button class="btn btn-primary plus-button" onclick="increaseQuantity('roll-model')"><i class="fas fa-plus"></i></button>
-                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('roll-model')"><i class="fas fa-minus"></i></button>
-            </div>
-            <div class="form-group col-4">
-                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
-            </div>
+        <div class="col-5">
+            <h1>this</h1>
         </div>
-        <!-- item -->
-        <div class="row">
-            <div class="col-3">
-                <label for="" class="form-text item-name">CAPRICE JUMBO TOILET PAPER</label>
-                <label for="" class="form-text item-code">Code: PW300JR</label>
-            </div>    
-            <div class="form-group col-1">
-                <!-- order quantity -->
-                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="caprice-jumbo" value="0">
-            </div>
-            <div class="form-group col-1.5">
-                <button class="btn btn-primary plus-button" onclick="increaseQuantity('caprice-jumbo')"><i class="fas fa-plus"></i></button>
-                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('caprice-jumbo')"><i class="fas fa-minus"></i></button>
-            </div>
-            <div class="form-group col-4">
-                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
-            </div>
-        </div>
-        
+    </div>
+    
     <!-- Type in<input onkeypress="process()" type="text" id="textbox"/>
     <button>Process</button>
     <p id="target"></p> -->
