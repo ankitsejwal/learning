@@ -19,8 +19,13 @@ body{
     background: rgb(206, 205, 205);
 }
 
-img{
-    height: 300px;
+.item-name {
+    color: #000;
+    font-weight: 500;
+}
+
+.item-code {
+    color : #AAA;
 }
 
 input{

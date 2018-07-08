@@ -16,11 +16,11 @@
     <div class="row">
         <div class="form-group col-3">
             <label for="" class="form-text text-muted">Ordered by</label>
-            <input type="text" name="order-by" id="" class="form-control">
+            <input type="text" name="order-by" id="" class="form-control" placeholder="Enter name">
         </div>
         <div class="form-group col-3">
             <label for="" class="form-text text-muted">Site Name</label>
-            <input type="text" name="site-name" id="" class="form-control">
+            <input type="text" name="site-name" id="" class="form-control" placeholder="e.g. BSL Sunshine">
         </div>
     <div class="col-3">
         <label for="" class="form-text">Delivery option</label>
@@ -41,8 +41,8 @@
     <!-- item -->
     <div class="row">
         <div class="col-3">
-            <label for="" class="form-text lead">LIVI 2PLY PAPER</label>
-            <label for="" class="form-text">Code: 1001/7008</label>
+            <label for="" class="form-text item-name">LIVI 2PLY PAPER</label>
+            <label for="" class="form-text item-code">Code: 1001/7008</label>
         </div>    
             <div class="form-group col-1">
                 <!-- order quantity -->
@@ -59,8 +59,8 @@
     <!-- item -->
     <div class="row">
             <div class="col-3">
-                <label for="" class="form-text lead">LIVI INTERLEAVED TISSUE</label>
-                <label for="" class="form-text">Code: 1001</label>
+                <label for="" class="form-text item-name">LIVI INTERLEAVED TISSUE</label>
+                <label for="" class="form-text item-code">Code: 1001</label>
             </div>    
                 <div class="form-group col-1">
                     <!-- order quantity -->
@@ -74,6 +74,43 @@
                     <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
                 </div>
         </div>
+        <!-- item -->
+        <div class="row">
+            <div class="col-3">
+                <label for="" class="form-text item-name">ROLL MODEL TOILET PAPER</label>
+                <label for="" class="form-text item-code">Code: *</label>
+            </div>    
+            <div class="form-group col-1">
+                <!-- order quantity -->
+                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="roll-model" value="0">
+            </div>
+            <div class="form-group col-1.5">
+                <button class="btn btn-primary plus-button" onclick="increaseQuantity('roll-model')"><i class="fas fa-plus"></i></button>
+                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('roll-model')"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="form-group col-4">
+                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+            </div>
+        </div>
+        <!-- item -->
+        <div class="row">
+            <div class="col-3">
+                <label for="" class="form-text item-name">CAPRICE JUMBO TOILET PAPER</label>
+                <label for="" class="form-text item-code">Code: PW300JR</label>
+            </div>    
+            <div class="form-group col-1">
+                <!-- order quantity -->
+                <input type="text" name="order-quantity" class="quantity form-control .col-1" id="caprice-jumbo" value="0">
+            </div>
+            <div class="form-group col-1.5">
+                <button class="btn btn-primary plus-button" onclick="increaseQuantity('caprice-jumbo')"><i class="fas fa-plus"></i></button>
+                <button class="btn btn-primary minus-button" onclick="decreaseQuantity('caprice-jumbo')"><i class="fas fa-minus"></i></button>
+            </div>
+            <div class="form-group col-4">
+                <input type="text" name="site-name" class="form-control" id="" placeholder="add comments">
+            </div>
+        </div>
+        
     <!-- Type in<input onkeypress="process()" type="text" id="textbox"/>
     <button>Process</button>
     <p id="target"></p> -->
