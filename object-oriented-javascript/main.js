@@ -1,14 +1,18 @@
-class Book{
-    constructor(name, author, pages){
-        this.name = name;
-        this.author = author;
-        this.pages = pages;
+// Your code here
+
+class Point{
+	constructor(x, y){
+        this.x = x;
+        this.y = y;
     }
 
-    read(){
-        console.log(`This book has ${this.pages} pages`);
+    plus(newPoint){
+        const newX = this.x + newPoint.x;
+        const newY = this.y + newPoint.y;
+        return newX, newY;
     }
 }
 
-const book = new Book('Robot Dreams', 'Isaac Asimov', 120);
-console.log(book.read());
+console.log(new Point(1, 2).plus(new Point(2, 1)))
+// → Point{x: 3, y: 3}
+
