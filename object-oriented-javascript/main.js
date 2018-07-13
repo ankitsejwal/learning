@@ -1,18 +1,24 @@
-// Your code here
+// ES6 sandbox exercise
 
-class Point{
-	constructor(x, y){
-        this.x = x;
-        this.y = y;
-    }
-
-    plus(newPoint){
-        const newX = this.x + newPoint.x;
-        const newY = this.y + newPoint.y;
-        return newX, newY;
+class Speaker{
+    constructor(name, verb){
+        this.name = name;
+        this.verb = verb || 'says';
     }
 }
 
-console.log(new Point(1, 2).plus(new Point(2, 1)))
-// → Point{x: 3, y: 3}
+class Shouter{
+    speak(text){
+        console.log(`${this.name} ${this.verb} ${text}`)
+    }
+}
+
+const convert = () => {
+
+    const inr = document.getElementById('rupees').value;
+    // 1 usd equals to 68 INR
+    const usd = 68;
+    const result = inr/usd;
+    document.getElementById('result').innerHTML = result;
+}
 
