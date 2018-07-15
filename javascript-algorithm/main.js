@@ -11,4 +11,4 @@ function factorize(number) {
     return total;
 }
 
-console.log(factorize(1));
+console.log(factorize(5));
