@@ -1,4 +1,4 @@
-// factorize algorithm
+// longest word
 
 word = "Hello world!! chihuahua the game";
 
