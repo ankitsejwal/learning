@@ -1,5 +1,5 @@
 const Logger = require('./logger');
-const logger = new Logger;
+const logger = new Logger();
 
 // Register a listner
 logger.on('messageLogged', (args) => {
