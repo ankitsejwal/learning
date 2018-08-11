@@ -1,7 +1,10 @@
-const EventEmitter = require('events');
-const event = new EventEmitter();
+const Logger = require('./logger');
+const logger = new Logger;
 
-event.on('messageLogged', function(){
-    console.log('message caught...');
-})
-event.emit('messageLogged');
+// Register a listner
+logger.on('messageLogged', (args) => {
+    console.log('message caught...', args);
+});
+
+logger.log('wola');
+
