@@ -14,6 +14,9 @@ if (app.get('env') === 'development') {
     console.log('Morgan enabled ...')
 }
 
+app.set('view engine', 'pug');
+app.set('views', './views');
+
 console.log(config.get('name'));
 console.log(config.get('mail.host'));
 console.log(config.get('mail.password'));
@@ -30,7 +33,12 @@ const genres = [
 // -> create genre
 // -> read genre, genres
 // -> update genre
-// -> delete genre            
+// -> delete genre
+
+// home - serving templates
+app.get('/', (req, res) => {
+    res.render('index', {title: "First template", message: "Welcome to home page."});
+});
 
 // get all genres
 app.get('/api/genres', (req, res) => {
