@@ -1,3 +1,4 @@
+const config = require('config');
 const helmet = require('helmet');
 const morgan = require('morgan');
 const Joi = require('joi');
@@ -12,6 +13,10 @@ if (app.get('env') === 'development') {
     app.use(morgan('tiny'));
     console.log('Morgan enabled ...')
 }
+
+console.log(config.get('name'));
+console.log(config.get('mail.host'));
+console.log(config.get('mail.password'));
 
 const genres = [
     { id: 1, name: "sci-fi"},
