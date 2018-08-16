@@ -1,8 +1,17 @@
+const helmet = require('helmet');
+const morgan = require('morgan');
 const Joi = require('joi');
 const express = require('express');
 const app = express();
 
+// middlewares
 app.use(express.json());
+app.use(express.static('public'));
+app.use(helmet());
+if (app.get('env') === 'development') {
+    app.use(morgan('tiny'));
+    console.log('Morgan enabled ...')
+}
 
 const genres = [
     { id: 1, name: "sci-fi"},
