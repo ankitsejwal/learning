@@ -42,3 +42,6 @@ SELECT * FROM flights order by duration DESC LIMIT 3;
 
 -- GROUP BY
 SELECT origin, count(*) FROM flights GROUP BY origin;
+SELECT origin, count(*) FROM flights WHERE origin GROUP BY origin;
+-- GROUP BY HAVING
+SELECT origin, count(*) FROM flights GROUP BY origin HAVING count(*) > 1;
