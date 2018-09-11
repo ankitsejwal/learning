@@ -1,12 +1,12 @@
 class Flight():
-  
+
     counter = 1
 
     def __init__(self, origin, destination, duration):
         self.origin = origin
         self.destination = destination
         self.duration = duration
-        
+
         # flight no/id
         self.id = Flight.counter
         Flight.counter += 1
@@ -19,7 +19,7 @@ class Flight():
         print(f'flight origin: {self.origin}')
         print(f'flight destination: {self.destination}')
         print(f'flight duration: {self.duration}')
-        
+
         print(f'\ntotal passenger: {len(self.passenger)}')
         for passenger in self.passenger:
             print(passenger.first_name)
@@ -30,6 +30,7 @@ class Flight():
     def add_passenger(self, p):
         self.passenger.append(p)
         p.flight_id = self.id
+
 
 class Passenger():
 
@@ -48,30 +49,33 @@ class Passenger():
             print(f'{self.first_name} is yet to book a flight.')
 
 # main method
+
+
 def main():
-  # create a new flight
-  f1 = Flight('melbourne', 'sydney', 1)
+    # create a new flight
+    f1 = Flight('melbourne', 'sydney', 1)
 
-  # change duration
-  f1.duration += 10
+    # change duration
+    f1.duration += 10
 
-  # delay flight
-  f1.delay(20)
+    # delay flight
+    f1.delay(20)
 
-  # create passenger
-  alice = Passenger('Alice', 'Fisher', '034343433')
-  bob   = Passenger('Bob', 'Fisher', '0424324324')
-  sandeep   = Passenger('Sandeep', 'Mehta', '0421224324')
+    # create passenger
+    alice = Passenger('Alice', 'Fisher', '034343433')
+    bob = Passenger('Bob', 'Fisher', '0424324324')
+    sandeep = Passenger('Sandeep', 'Mehta', '0421224324')
 
-  f1.add_passenger(alice)
-  f1.add_passenger(bob)
+    f1.add_passenger(alice)
+    f1.add_passenger(bob)
 
-  # print all the values
-  f1.print_info()
-  bob.print_info()
+    # print all the values
+    f1.print_info()
+    bob.print_info()
 
-  f1.add_passenger(sandeep)
-  sandeep.print_info()
+    f1.add_passenger(sandeep)
+    sandeep.print_info()
 
-if __name__ == "__main__" :
-  main()
+
+if __name__ == "__main__":
+    main()
