@@ -28,9 +28,11 @@ def book():
     if request.method == 'POST':
         name = request.form.get("passenger")
         flight_id = request.form.get("flight_id")
-        passenger = Passenger(name=name, flight_id=flight_id)
-        db.session.add(passenger)
-        db.session.commit()
+        # passenger = Passenger(name=name, flight_id=flight_id)
+        # db.session.add(passenger)
+        # db.session.commit()
+        flight = Flight.query.get(flight_id)
+        flight.add_passenger(name)
         return("Successfully entered")
 
     else:
@@ -40,7 +42,8 @@ def book():
 @app.route('/passengers/<int:flight_id>')
 def passengers(flight_id):
     flight = Flight.query.get(flight_id)
-    passengers = Passenger.query.filter_by(flight_id=flight_id).all()
+    # passengers = Passenger.query.filter_by(flight_id=flight_id).all()
+    passengers = flight.passengers
     return render_template("passengers.html", flight=flight, passengers=passengers)
 
 
